@@ -43,13 +43,13 @@ button:hover {
 }
 
 .gold {
-    background-color: gold;
+    background-color: dark gold;
 }
 
 .silver {
-    background-color: silver;
+    background-color: dark silver;
 }
 
 .bronze {
-    background-color: bronze;
+    background-color: dark yellow;
 }
