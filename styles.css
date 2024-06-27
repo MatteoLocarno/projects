@@ -15,41 +15,37 @@ body {
 
 button {
     padding: 10px 20px;
-    margin: 10px;
-    border: none;
-    background-color: #444;
-    color: white;
+    margin: 5px;
+    font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-#standingsTable {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-#standingsTable th, #standingsTable td {
     border: 1px solid #ccc;
+    background-color: #444;
+    color: #fff;
+}
+
+ul#standings {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul#standings li {
+    background: #444;
     padding: 10px;
+    margin-top: -1px; /* Prevent double borders */
+    border: 1px solid #ccc;
+    cursor: pointer;
 }
 
-#standingsTable th {
-    background-color: #555;
+ul#standings li:hover {
+    background: #555;
 }
 
-.gold {
-    background-color: dark gold;
-}
-
-.silver {
-    background-color: dark silver;
-}
-
-.bronze {
-    background-color: dark yellow;
+.flag {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
 }
