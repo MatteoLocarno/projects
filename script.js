@@ -1,33 +1,32 @@
-function openModal() {
-    document.getElementById("myModal").style.display = "block";
-    loadPilotData(); // Carica i dati del pilota
+const pilots = [
+    { name: "Max Verstappen", image: "path/to/verstappen.png", stats: "Punti: 200, Podi: 10, Vittorie: 8, Giri in Testa: 100, DNF: 1" },
+    // Aggiungi qui gli altri piloti
+];
+
+document.getElementById("searchBar").addEventListener("keyup", filterPilots);
+
+function filterPilots() {
+    const query = document.getElementById("searchBar").value.toLowerCase();
+    const suggestions = pilots.filter(pilot => pilot.name.toLowerCase().includes(query));
+    displaySuggestions(suggestions);
 }
 
-function closeModal() {
-    document.getElementById("myModal").style.display = "none";
+function displaySuggestions(suggestions) {
+    const suggestionsList = document.getElementById("suggestions");
+    suggestionsList.innerHTML = "";
+    suggestions.forEach(pilot => {
+        const li = document.createElement("li");
+        li.textContent = pilot.name;
+        li.addEventListener("click", () => displayPilotData(pilot));
+        suggestionsList.appendChild(li);
+    });
 }
 
-function loadPilotData() {
-    // Esempio di dati del pilota (da sostituire con dati reali da un API)
-    const pilota = {
-        nome: "Lewis Hamilton",
-        categoria: "F1",
-        posizione: 1,
-        punti: 197,
-        podi: 7,
-        vittorie: 4,
-        giriInTesta: 52,
-        dnf: 1
-    };
-
-    const modalContent = document.getElementById("modal-content");
-    modalContent.innerHTML = `
-        <h2>${pilota.nome} - ${pilota.categoria}</h2>
-        <p>Posizione in Classifica: ${pilota.posizione}</p>
-        <p>Punti: ${pilota.punti}</p>
-        <p>Podi: ${pilota.podi}</p>
-        <p>Vittorie: ${pilota.vittorie}</p>
-        <p>Giri in Testa: ${pilota.giriInTesta}</p>
-        <p>DNF (Non finito): ${pilota.dnf}</p>
-    `;
+function displayPilotData(pilot) {
+    document.getElementById("pilotImage").src = pilot.image;
+    document.getElementById("pilotName").textContent = pilot.name;
+    document.getElementById("pilotStats").textContent = pilot.stats;
+    document.getElementById("suggestions").innerHTML = "";
+    document.getElementById("searchBar").value = "";
 }
+
