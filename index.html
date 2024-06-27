@@ -9,12 +9,23 @@
 <body>
     <div class="container">
         <h1>Tracker Pilota - Stagione 2024</h1>
-        <input type="text" id="searchBar" placeholder="Cerca pilota..." onkeyup="filterPilots()">
-        <ul id="suggestions"></ul>
-        <div id="pilotData">
-            <img id="pilotImage" src="" alt="Immagine del pilota">
-            <h2 id="pilotName"></h2>
-            <p id="pilotStats"></p>
+        <div id="sportSelection">
+            <button onclick="loadStandings('f1')">Formula 1</button>
+            <button onclick="loadStandings('motogp')">Moto GP</button>
+        </div>
+        <div id="standingsContainer" style="display:none;">
+            <h2 id="standingsTitle"></h2>
+            <table id="standingsTable">
+                <thead>
+                    <tr>
+                        <th>Posizione</th>
+                        <th>Pilota</th>
+                        <th>Punti</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
         </div>
     </div>
     <script src="script.js"></script>
