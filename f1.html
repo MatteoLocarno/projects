@@ -3,32 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F1 Standings</title>
+    <title>Classifica F1</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>F1 Standings</h1>
+        <h1>Classifica F1</h1>
         
-        <!-- Contenuto dinamico della classifica F1 -->
-        <div id="f1-standings"></div>
+        <ul id="f1-standings"></ul>
         
-        <!-- Pulsante per tornare alla home -->
         <button onclick="window.location.href = 'index.html';">Torna alla Home</button>
     </div>
 
-    <!-- Script per caricare i dati dalla classifica F1 -->
     <script src="script.js"></script>
     <script>
-        fetch('f1_standings.json')
-            .then(response => response.json())
-            .then(data => {
-                // Manipolare i dati e visualizzare nella pagina
-                // Ad esempio:
-                const standingsContainer = document.getElementById('f1-standings');
-                // Esegui il rendering dei dati nella tabella o nel modo desiderato
-            })
-            .catch(error => console.error('Errore nel caricamento dei dati:', error));
+        // Dati dei piloti di F1
+        const f1Data = [
+            { position: 1, name: "Max Verstappen", points: 219, flag: "url-to-flag-image", wiki: "https://en.wikipedia.org/wiki/Max_Verstappen" },
+            // Includi qui gli altri piloti
+        ];
+
+        // Funzione per visualizzare la classifica F1
+        function displayF1Standings() {
+            const f1StandingsList = document.getElementById('f1-standings');
+            f1StandingsList.innerHTML = '';
+            f1Data.forEach(pilot => {
+                const li = document.createElement('li');
+                li.innerHTML = `<img src="${pilot.flag}" alt="${pilot.name} flag" class="flag"> <a href="${pilot.wiki}" target="_blank">${pilot.position}. ${pilot.name}</a> - ${pilot.points} punti`;
+                f1StandingsList.appendChild(li);
+            });
+        }
+
+        // Chiamata alla funzione per visualizzare la classifica al caricamento della pagina
+        displayF1Standings();
     </script>
 </body>
 </html>
