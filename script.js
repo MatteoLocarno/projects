@@ -92,3 +92,7 @@ function loadStandings(sport) {
 
     document.getElementById('standingsContainer').style.display = 'block';
 }
+function goHome() {
+    document.getElementById('standingsContainer').style.display = 'none';
+    document.getElementById('sportSelection').style.display = 'block';
+}
