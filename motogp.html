@@ -3,16 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MotoGP Standings - Stagione 2024</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>MotoGP Standings</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Classifica MotoGP - Stagione 2024</h1>
-        <button onclick="window.location.href='/'">Home</button>
-        <ul id="standings"></ul>
+        <h1>MotoGP Standings</h1>
+        
+        <!-- Contenuto dinamico della classifica MotoGP -->
+        <div id="motogp-standings"></div>
+        
+        <!-- Pulsante per tornare alla home -->
+        <button onclick="window.location.href = 'index.html';">Torna alla Home</button>
     </div>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
-    <script>fetchMotoGPData();</script>
+
+    <!-- Script per caricare i dati dalla classifica MotoGP -->
+    <script src="script.js"></script>
+    <script>
+        fetch('motogp_standings.json')
+            .then(response => response.json())
+            .then(data => {
+                // Manipolare i dati e visualizzare nella pagina
+                // Ad esempio:
+                const standingsContainer = document.getElementById('motogp-standings');
+                // Esegui il rendering dei dati nella tabella o nel modo desiderato
+            })
+            .catch(error => console.error('Errore nel caricamento dei dati:', error));
+    </script>
 </body>
 </html>
+
