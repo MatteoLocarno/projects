@@ -1,32 +1,61 @@
-const pilots = [
-    { name: "Max Verstappen", image: "path/to/verstappen.png", stats: "Punti: 200, Podi: 10, Vittorie: 8, Giri in Testa: 100, DNF: 1" },
-    // Aggiungi qui gli altri piloti
-];
-
-document.getElementById("searchBar").addEventListener("keyup", filterPilots);
-
-function filterPilots() {
-    const query = document.getElementById("searchBar").value.toLowerCase();
-    const suggestions = pilots.filter(pilot => pilot.name.toLowerCase().includes(query));
-    displaySuggestions(suggestions);
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-function displaySuggestions(suggestions) {
-    const suggestionsList = document.getElementById("suggestions");
-    suggestionsList.innerHTML = "";
-    suggestions.forEach(pilot => {
-        const li = document.createElement("li");
-        li.textContent = pilot.name;
-        li.addEventListener("click", () => displayPilotData(pilot));
-        suggestionsList.appendChild(li);
-    });
+.container {
+    text-align: center;
 }
 
-function displayPilotData(pilot) {
-    document.getElementById("pilotImage").src = pilot.image;
-    document.getElementById("pilotName").textContent = pilot.name;
-    document.getElementById("pilotStats").textContent = pilot.stats;
-    document.getElementById("suggestions").innerHTML = "";
-    document.getElementById("searchBar").value = "";
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
 }
+
+ul#suggestions {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul#suggestions li {
+    background: #444;
+    padding: 10px;
+    margin-top: -1px; /* Prevent double borders */
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+ul#suggestions li:hover {
+    background: #555;
+}
+
+#pilotData {
+    margin-top: 20px;
+}
+
+#pilotData img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+#pilotData h2 {
+    margin: 10px 0;
+}
+
+#pilotData p {
+    margin: 0;
+}
+
 
