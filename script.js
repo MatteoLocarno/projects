@@ -1,16 +1,24 @@
+// script.js
+
 function fetchF1Data() {
-    fetch('/api/f1')
+    fetch('/api/f1') // Assicurati che il percorso sia corretto per il tuo endpoint API
         .then(response => response.json())
         .then(data => {
             displayStandings(data);
+        })
+        .catch(error => {
+            console.error('Errore nel caricamento dei dati F1:', error);
         });
 }
 
 function fetchMotoGPData() {
-    fetch('/api/motogp')
+    fetch('/api/motogp') // Assicurati che il percorso sia corretto per il tuo endpoint API
         .then(response => response.json())
         .then(data => {
             displayStandings(data);
+        })
+        .catch(error => {
+            console.error('Errore nel caricamento dei dati MotoGP:', error);
         });
 }
 
