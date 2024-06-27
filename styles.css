@@ -1,44 +1,51 @@
-/* Stili per il tuo contenitore principale */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
 .container {
-    max-width: 800px;
-    margin: 0 auto;
     text-align: center;
-    padding: 20px;
 }
 
-/* Stili per i pulsanti delle categorie */
-.categories {
-    margin-bottom: 20px;
-}
-
-.categories button {
-    margin: 5px;
+button {
     padding: 10px 20px;
+    margin: 5px;
     font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #444;
+    color: #fff;
+}
+
+ul#standings {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul#standings li {
+    background: #444;
+    padding: 10px;
+    margin-top: -1px; /* Prevent double borders */
+    border: 1px solid #ccc;
     cursor: pointer;
 }
 
-/* Stili per la tabella dei piloti */
-#standings-table {
-    margin-top: 20px;
-    border-collapse: collapse;
-    width: 100%;
+ul#standings li:hover {
+    background: #555;
 }
 
-#standings-table th, #standings-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
+.flag {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
 }
-
-#standings-table th {
-    background-color: #f2f2f2;
-}
-
-#standings-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-#standings-table tr:hover {
-    background-color: #ddd;
-}
-

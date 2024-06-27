@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formula 1 & MotoGP Standings</title>
-    <!-- Link al tuo file CSS -->
+    <title>Posizione in Classifica del Pilota</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Formula 1 & MotoGP Standings</h1>
-        <!-- Pulsanti per le categorie -->
-        <div class="categories">
-            <button id="f1-button" onclick="showF1Standings()">Formula 1</button>
-            <button id="motogp-button" onclick="showMotoGPStandings()">MotoGP</button>
-        </div>
-
-        <!-- Contenitore per la tabella dei piloti -->
-        <div id="standings-table"></div>
+        <h1>Ricerca Posizione Pilota</h1>
+        <button onclick="openModal()">Ricerca</button>
     </div>
 
-    <!-- Link ai tuoi file JavaScript -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
