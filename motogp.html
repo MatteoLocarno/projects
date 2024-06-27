@@ -3,32 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MotoGP Standings</title>
+    <title>Classifica MotoGP</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>MotoGP Standings</h1>
+        <h1>Classifica MotoGP</h1>
         
-        <!-- Contenuto dinamico della classifica MotoGP -->
-        <div id="motogp-standings"></div>
+        <ul id="motogp-standings"></ul>
         
-        <!-- Pulsante per tornare alla home -->
         <button onclick="window.location.href = 'index.html';">Torna alla Home</button>
     </div>
 
-    <!-- Script per caricare i dati dalla classifica MotoGP -->
     <script src="script.js"></script>
     <script>
-        fetch('motogp_standings.json')
-            .then(response => response.json())
-            .then(data => {
-                // Manipolare i dati e visualizzare nella pagina
-                // Ad esempio:
-                const standingsContainer = document.getElementById('motogp-standings');
-                // Esegui il rendering dei dati nella tabella o nel modo desiderato
-            })
-            .catch(error => console.error('Errore nel caricamento dei dati:', error));
+        // Dati dei piloti di MotoGP
+        const motogpData = [
+            { position: 1, name: "Jorge Martín", points: 171, flag: "url-to-flag-image", wiki: "https://en.wikipedia.org/wiki/Jorge_Mart%C3%ADn_(motorcyclist)" },
+            // Includi qui gli altri piloti
+        ];
+
+        // Funzione per visualizzare la classifica MotoGP
+        function displayMotoGPStandings() {
+            const motogpStandingsList = document.getElementById('motogp-standings');
+            motogpStandingsList.innerHTML = '';
+            motogpData.forEach(pilot => {
+                const li = document.createElement('li');
+                li.innerHTML = `<img src="${pilot.flag}" alt="${pilot.name} flag" class="flag"> <a href="${pilot.wiki}" target="_blank">${pilot.position}. ${pilot.name}</a> - ${pilot.points} punti`;
+                motogpStandingsList.appendChild(li);
+            });
+        }
+
+        // Chiamata alla funzione per visualizzare la classifica al caricamento della pagina
+        displayMotoGPStandings();
     </script>
 </body>
 </html>
