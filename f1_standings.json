@@ -1,0 +1,222 @@
+[
+    {
+        "position": 1,
+        "name": "Max Verstappen",
+        "team": "Red Bull Racing Honda",
+        "points": 219,
+        "wins": 6,
+        "podiums": 11,
+        "dnf": 1,
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/20px-Flag_of_the_Netherlands.svg.png",
+        "wiki": "https://en.wikipedia.org/wiki/Max_Verstappen"
+    },
+    {
+        "position": 2,
+        "name": "Lando Norris",
+        "team": "McLaren Mercedes",
+        "points": 150,
+        "wins": 2,
+        "podiums": 6,
+        "dnf": 1,
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/20px-Flag_of_the_United_Kingdom.svg.png",
+        "wiki": "https://en.wikipedia.org/wiki/Lando_Norris"
+    },
+    {
+        "position": 3,
+        "name": "Charles Leclerc",
+        "team": "Scuderia Ferrari",
+        "points": 148,
+        "wins": 2,
+        "podiums": 6,
+        "dnf": 1,
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Flag_of_Monaco.svg/20px-Flag_of_Monaco.svg.png",
+        "wiki": "https://en.wikipedia.org/wiki/Charles_Leclerc"
+    },
+    {
+        "position": 4,
+        "name": "Carlos Sainz Jr.",
+        "team": "Scuderia Ferrari",
+        "points": 116,
+        "wins": 0,
+        "podiums": 3,
+        "dnf": 1,
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/20px-Flag_of_Spain.svg.png",
+        "wiki": "https://en.wikipedia.org/wiki/Carlos_Sainz_Jr."
+    },
+    {
+        "position": 5,
+        "name": "Sergio Pérez",
+        "team": "Red Bull Racing Honda",
+        "points": 111,
+        "wins": 0,
+        "podiums": 3,
+        "dnf": 2,
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/20px-Flag_of_Mexico.svg.png",
+        "wiki": "https://en.wikipedia.org/wiki/Sergio_P%C3%A9rez"
+    },
+    {
+        "position": 6,
+        "name": "Oscar Piastri",
+        "team": "McLaren Mercedes",
+        "points": 87,
+        "wins": 0,
+        "podiums": 2,
+        "dnf": 0,
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Australia.svg/20px-Flag_of_Australia.svg.png",
+        "wiki": "https://en.wikipedia.org/wiki/Oscar_Piastri"
+    },
+    {
+        "position": 7,
+        "name": "George Russell",
+        "team": "Williams Mercedes",
+        "points": 81,
+        "wins": 0,
+        "podiums": 1,
+        "dnf": 1,
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/20px-Flag_of_the_United_Kingdom.svg.png",
+        "wiki": "https://en.wikipedia.org/wiki/George_Russell_(racing_driver)"
+    },
+    {
+        "position": 8,
+        "name": "Lewis Hamilton",
+        "team": "Mercedes",
+        "points": 70,
+        "wins": 0,
+        "podiums": 1,
+        "dnf": 1,
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/20px-Flag_of_the_United_Kingdom.svg.png",
+        "wiki": "https://en.wikipedia.org/wiki/Lewis_Hamilton"
+    },
+    {
+        "position": 9,
+        "name": "Fernando Alonso",
+        "team": "Alpine Renault",
+        "points": 41,
+        "wins": 0,
+        "podiums": 0,
+        "dnf": 1,
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/20px-Flag_of_Spain.svg.png",
+        "wiki": "https://en.wikipedia.org/wiki/Fernando_Alonso"
+    },
+    {
+        "position": 10,
+        "name": "Yuki Tsunoda",
+        "team": "AlphaTauri Honda",
+        "points": 19,
+        "wins": 0,
+        "podiums": 0,
+        "dnf": 1,
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/20px-Flag_of_Japan.svg.png",
+        "wiki": "https://en.wikipedia.org/wiki/Yuki_Tsunoda"
+    },
+    {
+        "position": 11,
+        "name": "Lance Stroll",
+        "team": "Aston Martin Mercedes",
+        "points": 17,
+        "wins": 0,
+        "podiums": 0,
+        "dnf": 1,
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Flag_of_Canada.svg/20px-Flag_of_Canada.svg.png",
+        "wiki": "https://en.wikipedia.org/wiki/Lance_Stroll"
+    },
+    {
+        "position": 12,
+        "name": "Daniel Ricciardo",
+        "team": "McLaren Mercedes",
+        "points": 9,
+        "wins": 0,
+        "podiums": 0,
+        "dnf": 2,
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Australia.svg/20px-Flag_of_Australia.svg.png",
+        "wiki": "https://en.wikipedia.org/wiki/Daniel_Ricciardo"
+    },
+    {
+        "position": 13,
+        "name": "Oliver Bearman",
+        "team": "Red Bull Racing Honda",
+        "points": 6,
+        "wins": 0,
+        "podiums": 0,
+        "dnf": 0,
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_the_United_Kingdom.svg/20px-Flag_of_the_United_Kingdom.svg.png",
+        "wiki": "https://en.wikipedia.org/wiki/Oliver_Bearman"
+    },
+    {
+        "position": 14,
+        "name": "Nico Hülkenberg",
+        "team": "Aston Martin Mercedes",
+        "points": 6,
+        "wins": 0,
+        "podiums": 0,
+        "dnf": 1,
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/20px-Flag_of_Germany.svg.png",
+        "wiki": "https://en.wikipedia.org/wiki/Nico_H%C3%BClkenberg"
+    },
+    {
+        "position": 15,
+        "name": "Pierre Gasly",
+        "team": "AlphaTauri Honda",
+        "points": 5,
+        "wins": 0,
+        "podiums": 0,
+        "dnf": 1,
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/20px-Flag_of_France.svg.png",
+        "wiki": "https://en.wikipedia.org/wiki/Pierre_Gasly"
+    },
+    {
+        "position": 16,
+        "name": "Esteban Ocon",
+        "team": "Alpine Renault",
+        "points": 3,
+        "wins": 0,
+        "podiums": 0,
+        "dnf": 1,
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/20px-Flag_of_France.svg.png",
+        "wiki": "https://en.wikipedia.org/wiki/Esteban_Ocon"
+    },
+    {
+        "position": 17,
+        "name": "Alexander Albon",
+        "team": "Williams Mercedes",
+        "points": 2,
+        "wins": 0,
+        "podiums": 0,
+        "dnf": 2,
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/20px-Flag_of_Thailand.svg.png",
+        "wiki": "https://en.wikipedia.org/wiki/Alexander_Albon"
+    },
+    {
+        "position": 18,
+        "name": "Kevin Magnussen",
+        "team": "Haas Ferrari",
+        "points": 1,
+        "wins": 0,
+        "podiums": 0,
+        "dnf": 1,
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/20px-Flag_of_Denmark.svg.png",
+        "wiki": "https://en.wikipedia.org/wiki/Kevin_Magnussen"
+    },
+    {
+        "position": 19,
+        "name": "Zhou Guanyu",
+        "team": "Alfa Romeo Racing Ferrari",
+        "points": 0,
+        "wins": 0,
+        "podiums": 0,
+        "dnf": 1,
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/20px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        "wiki": "https://en.wikipedia.org/wiki/Zhou_Guanyu"
+    },
+    {
+        "position": 20,
+        "name": "Valtteri Bottas",
+        "team": "Alfa Romeo Racing Ferrari",
+        "points": 0,
+        "wins": 0,
+        "podiums": 0,
+        "dnf": 1,
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Finland.svg/20px-Flag_of_Finland.svg.png",
+        "wiki": "https://en.wikipedia.org/wiki/Valtteri_Bottas"
+    }
+]
